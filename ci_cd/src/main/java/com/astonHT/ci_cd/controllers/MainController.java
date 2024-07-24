@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
     @GetMapping("/home")
     public String homePage(Model model) {
+        System.out.println("test message for check Jenkins");
         model.addAttribute("name", "Main page");
         return "home";
     }
